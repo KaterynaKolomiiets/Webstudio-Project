@@ -1,0 +1,122 @@
+.header {
+    border-bottom: 1px solid var(--header-border-bottom-color);
+    position: relative;
+    background-color: pink;
+}
+
+.menu-navigate{
+    
+    @media screen and (max-width: 480px) {
+        display: none;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: rosybrown;
+        padding-top: 48px;
+        padding-right: 40px;
+        padding-bottom: 48px;
+        padding-left: 40px;
+    }
+    @media screen and (min-width: 480px){
+        display: flex;
+    }
+    
+}
+.menu{
+    @media screen and (max-width: 480px) {
+        margin-bottom: 302px;
+    }
+    @media screen and (min-width: 480px) {
+        display: flex;
+    }
+
+}
+.menu-button{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 15px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: 480px){
+        display: none;
+    }
+}
+.menu-toggler{
+    width: 40px;
+    height: 40px;
+    fill: var(--secondary-text-color);
+}
+.menu-toggler .icon-cross {
+    display: none;
+}
+.menu-toggler.is-open .icon-cross {
+    display: block;
+}
+.menu-toggler.is-open .icon-menu {
+    display: none;
+}
+
+
+.menu__link{
+    color: var(--secondary-text-color);
+    @media screen and (max-width: 480px) {
+        font-size: 40px;
+        line-height: 1.17;
+        padding-bottom: 32px;
+        letter-spacing: 0.02em;
+        display: block;
+    }
+
+}
+.contacts{
+    @media screen and (max-width: 480px) {
+        margin-bottom: 64px;
+    }
+    
+}
+.contacts__link{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.17;
+    display: block;
+    letter-spacing: 0.02em;
+}
+.contacts__link_phone {
+    @media screen and (max-width: 480px) {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+    
+}
+.contacts__link_email{
+    @media screen and (max-width: 480px) {
+        font-size: 24px;
+    }
+}
+
+
+.contacts__svg{
+    display: none;
+}
+.social-media-header{
+    display: flex;
+
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+}
+.social-media-header__item:not(:last-child){
+    margin-right:10px;
+    border-right: 1px solid var(--grey-semitransparent);
+    padding-right: 10px;
+}
+.social-media-header__link{
+    font-size: 18px;
+    color: var(--accent-color);
+}

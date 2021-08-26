@@ -1,0 +1,40 @@
+.logo {
+    // margin-right: 93px;
+    
+    font-family: var(--font-raleway);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+.logo_main {
+    color: var(--secondary-text-color);
+
+    &:hover,
+    &:focus{
+        color: initial;
+    }
+
+    @media screen and (max-width: 480px) {
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-right: 88px;
+    }
+}
+
+.logo_accent {
+    color: var(--accent-color);
+}
+.logo_reverse {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: var(--white-color);
+
+    &:hover,
+    &:focus{
+        color: var(--white-color);
+    }
+}

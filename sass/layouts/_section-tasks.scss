@@ -1,0 +1,34 @@
+.tasks{
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
+}
+.tasks-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
+
+.tasks-list__item {
+    flex-basis: calc((100% - 90px)/ 3);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.tasks-list__img-container {
+    position: relative;
+}
+.tasks-list__description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 80px;
+
+    text-transform: uppercase;
+    text-align: center;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--white-color);
+    line-height: 1.17;
+    font-weight: 700;
+}

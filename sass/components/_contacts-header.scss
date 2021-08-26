@@ -1,0 +1,39 @@
+// .contacts {
+//     margin-left: auto;
+// }
+
+// .contacts__link {
+//     display: flex;
+//     align-items: center;
+//     color: var(--primary-text-color);
+//     font-weight: 500;
+//     line-height: 1.17;
+//     padding: 32px 0;
+
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .contacts__item:first-child {
+//     margin-right: 50px;
+// }
+// .contacts__svg {
+//     display: flex;
+//     fill: var(--svg-icons-grey);
+//     margin-right: 10px;
+
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     .contacts__link:hover &,
+//     .contacts__link:focus &{
+//         fill: var(--accent-color);
+//     }
+// }
+
+// .contacts__svg_envelope {
+//     width: 16px;
+//     height: 12px;
+// }
+
+// .contacts__svg_smartphone {
+//     width: 10px;
+//     height: 16px;
+// }

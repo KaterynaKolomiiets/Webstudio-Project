@@ -1,0 +1,44 @@
+body {
+    background-color: var(--background-color-primary);
+    color: var(--primary-text-color);
+    font-family: var(--font-roboto);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.ul-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
