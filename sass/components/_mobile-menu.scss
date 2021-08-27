@@ -59,7 +59,7 @@
     font-weight: 500;
     letter-spacing: 0.02em;
 }
-.menu-mobile__item {
+.menu-mobile__item:not(:last-child) {
     margin-bottom: 32px;
 }
 .menu-mobile__link {
