@@ -696,6 +696,10 @@ label {
   color: var(--accent-color);
 }
 
+.menu-mobile__link.current {
+  color: var(--accent-color);
+}
+
 @media screen and (max-width: 767px) {
   .mobile-contacts__link {
     color: var(--primary-text-color);
@@ -817,7 +821,6 @@ label {
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero__tablet.jpg");
-    max-width: 768px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -70,6 +70,9 @@
         color: var(--accent-color);
     }
 }
+.menu-mobile__link.current{
+    color: var(--accent-color);
+}
 .mobile-contacts__link {
 
     @media screen and (max-width: 767px) {
