@@ -429,9 +429,9 @@ p {
 
 .modal {
   position: absolute;
-  top: 93px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   background-color: var(--white-color);
 }
 
@@ -441,18 +441,9 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .modal {
-    top: 208px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 
