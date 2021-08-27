@@ -431,8 +431,16 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
+  height: 100vh;
+  overflow: auto;
   transform: translate(-50%, -50%);
   background-color: var(--white-color);
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    height: 98vh;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -493,6 +501,12 @@ p {
   margin-bottom: 12px;
 }
 
+@media screen and (max-width: 480px) {
+  .contact-form__header {
+    font-size: 18px;
+  }
+}
+
 .contact-form__input-holder {
   position: relative;
   margin-bottom: 10px;
@@ -507,6 +521,12 @@ p {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 42px;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-form__input {
+    height: 30px;
+  }
 }
 
 .contact-form__input:focus {
@@ -527,6 +547,12 @@ p {
   resize: none;
   padding: 12px 16px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480) {
+  .txt-area {
+    height: 100px;
+  }
 }
 
 .txt-area::placeholder {
@@ -559,6 +585,14 @@ label {
   margin-bottom: 30px;
   font-size: 11px;
   line-height: 1.17;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-form__accept-rules {
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    font-size: 8px;
+  }
 }
 
 .contact-form__custom-checkbox {
@@ -1325,6 +1359,8 @@ label {
 }
 
 .portfolio__link {
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

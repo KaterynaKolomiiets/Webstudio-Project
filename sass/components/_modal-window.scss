@@ -1,17 +1,23 @@
 .modal {
+    @media screen and (max-width: 480px) {
+        height: 98vh;
+    }
+     @media screen and (min-width: 480px) {
+         width: 450px;
+     }
+
+     @media screen and (min-width: 1200px) {
+         width: 528px
+     }
     position: absolute;
     top: 50%;
     left: 50%;
+    height: 100vh;
+    overflow: auto;
     transform: translate(-50%, -50%);
     
     background-color: var(--white-color);
-    @media screen and (min-width: 480px) {
-        width: 450px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 528px
-        
-    }
+   
 }
 
 .modal__close-btn {

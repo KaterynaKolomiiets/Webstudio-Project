@@ -6,6 +6,9 @@
 }
 
 .contact-form__header {
+    @media screen and (max-width: 480px) {
+        font-size: 18px;
+    }
     font-weight: 700;
     font-size: 20px;
     line-height: 1.17;
@@ -21,6 +24,9 @@
 }
 
 .contact-form__input {
+    @media screen and (max-width: 480px) {
+        height: 30px;
+    }
     width: 100%;
     height: 40px;
     border-radius: 4px;
@@ -45,6 +51,9 @@
 }
 
 .txt-area {
+    @media screen and (max-width: 480) {
+        height: 100px;
+    }
     height: 120px;
     resize: none;
     padding: 12px 16px;
@@ -76,10 +85,13 @@ label {
 }
 
 .contact-form__accept-rules {
+    @media screen and (max-width: 480px) {
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        font-size: 8px;
+    }
     display: flex;
     align-items: center;
-    // width: 100%;
-    // padding-left: 16px;
     margin-bottom: 30px;
     font-size: 11px;
     line-height: 1.17;
