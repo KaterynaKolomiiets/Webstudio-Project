@@ -743,14 +743,12 @@ label {
 
 .mobile-social {
   display: flex;
-}
-
-.mobile-social__item:not(:last-child) {
-  margin-right: 10px;
+  flex-wrap: wrap;
 }
 
 .mobile-social__item {
   display: flex;
+  padding: 10px;
 }
 
 .mobile-social__item:not(:last-child):after {
