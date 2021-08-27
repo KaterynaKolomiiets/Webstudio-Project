@@ -14,6 +14,7 @@
         background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero__mobile.jpg");
         background-repeat: no-repeat;
         background-position: center;
+         background-size: cover;
         // max-width: 480px;
     }
     @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
@@ -22,7 +23,8 @@
         background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero__mobile@2x.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        max-width: 480px;
+        // max-width: 480px;
+        background-size: cover;
     }
 
     @media screen and (min-width: 768px) {
@@ -30,6 +32,7 @@
         max-width: 768px;
         background-repeat: no-repeat;
         background-position: center;
+         background-size: cover;
     }
     @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     (min-width: 768pxpx) and (min-resolution: 192dpi),
@@ -37,12 +40,14 @@
         background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero__tablet@2x.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        max-width: 768px;
+        // max-width: 768px;
+        background-size: cover;
     } 
     @media screen and (min-width: 1200px){
         background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url("../images/hero/hero__desktop.jpg");
         max-width: 1600px;
         padding-top: 200px;
+        background-size: cover;
     }
     @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     (min-width: 1200px) and (min-resolution: 192dpi),
@@ -50,6 +55,7 @@
         background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero__desktop@2x.jpg");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
     }
 
 }

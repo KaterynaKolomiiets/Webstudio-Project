@@ -50,27 +50,36 @@
 
 .address {
     text-align: center;
-    margin-bottom: 60px;
 
     @media screen and (min-width: 768px) and (max-width: 1200px){
         width: 50%;
+        
     }
 
     @media screen and (min-width: 1200px){
         margin-right: 70px;
         text-align: left;
     }
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 60px;
+    }
 }
 .join {
     text-align: center;
-    margin-bottom: 60px;
 
     @media screen and (min-width: 768px) and (max-width: 1200px) {
         width: 50%;
+        
     }
+     @media screen and (max-width) {
+         
+     }
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
         text-align: left;
+    }
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 60px;
     }
 }
 .subscribe{
