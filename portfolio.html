@@ -21,83 +21,81 @@
   <body>
     <!--==================== HEADER ====================-->
 
-    <header class="header">
-      <div class="container container_flex">
+     <header class="header">
+      <div class="container container_header">
         <nav class="navigation">
           <a class="link logo logo_main" href="./index.html"
             ><span class="logo_accent">Web</span>Studio</a
           >
-          <ul class="menu ul-reset">
-            <li class="menu__item">
-              <a href="./index.html" class="link menu__link ">Студия</a>
+          <ul class="navigation__menu ul-reset">
+            <li class="navigation__item">
+              <a href="./index.html" class="link navigation__link ">Студия</a>
             </li>
-            <li class="menu__item">
-              <a href="" class="link menu__link current">Портфолио</a>
+            <li class="navigation__item">
+              <a href="" class="link navigation__link current">Портфолио</a>
             </li>
-            <li class="menu__item">
-              <a href="#" class="link menu__link">Контакты</a>
+            <li class="navigation__item">
+              <a href="#" class="link navigation__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts ul-reset">
-          <li class="contacts__item">
-            <a href="#" class="link contacts__link">
-              <!-- <svg class="contacts__svg contacts__svg_envelope">
+        <ul class="header-contacts ul-reset">
+          <li class="header-contacts__item">
+            <a href="#" class="link header-contacts__link">
+              <svg class="header-contacts__svg header-contacts__svg_envelope">
                 <use href="./images/sprite.svg#icon-envelope"></use>
-              </svg> -->
+              </svg>
               <span>info@devstudio.com</span>
             </a>
           </li>
-          <li class="contacts-header-item">
-            <a href="#" class="link contacts__link">
-              <!-- <svg class="contacts__svg contacts__svg_smartphone">
+          <li class="header-contacts__item">
+            <a href="#" class="link header-contacts__link">
+              <svg class="header-contacts__svg header-contacts__svg_smartphone">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
-              </svg> -->
+              </svg>
               <span>+38 096 111 11 11</span>
             </a>
           </li>
         </ul>
-        
-          <div class="mobile-menu">
-            <div class="mobile-menu__container">
-              <div class="wrapper">
-                <ul class="menu-mobile ul-reset">
-                  <li class="menu-mobile__item"><a href="" class="link menu-mobile__link">Студия</a></li>
-                  <li class="menu-mobile__item"><a href="" class="link menu-mobile__link">Портфолио</a></li>
-                  <li class="menu-mobile__item"><a href="" class="link menu-mobile__link">Контакты</a></li>
-                </ul>
-              </div>
-              <div class="wrapper">
-                <ul class="mobile-contacts ul-reset">
-                  <li class="mobile-contacts__item"><a href="" class="link mobile-contacts__link mobile-contacts__link_phone">+38 096 111 11 11</a></li>
-                  <li class="mobile-contacts__item"><a href="" class="link mobile-contacts__link mobile-contacts__link_email">info@devstudio.com</a></li>
-                </ul>
-                <ul class="mobile-social ul-reset">
-                  <li class="mobile-social__item"><a href="" class="link mobile-social__link">Instagram</a></li>
-                  <li class="mobile-social__item"><a href="" class="link mobile-social__link">Twitter</a></li>
-                  <li class="mobile-social__item"><a href="" class="link mobile-social__link">Facebook</a></li>
-                  <li class="mobile-social__item"><a href="" class="link mobile-social__link">LinkedIn</a></li>
-                </ul>
-              </div>
-             
+        <div class="mobile-menu is-hidden">
+            
+          <div class="mobile-menu__container">
+            <button type="button" class="mobile-menu__btn menu-opened">
+              <svg class="mobile-menu__svg mobile-menu__close">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu__wrapper">
+              <ul class="menu-mobile ul-reset">
+                <li class="menu-mobile__item"><a href="./index.html" class="link menu-mobile__link">Студия</a></li>
+                <li class="menu-mobile__item"><a href="./portfolio.html" class="link menu-mobile__link">Портфолио</a></li>
+                <li class="menu-mobile__item"><a href="" class="link menu-mobile__link">Контакты</a></li>
+              </ul>
             </div>
-             <button type="button" class="menu-toggler">
-                <svg class="menu-toggler__svg">
-                  <use href="./images/sprite.svg#icon-hamburger" class="menu-toggler__svg-hamburger"></use>
-                  <use href="./images/sprite.svg#icon-close" class="menu-toggler__svg-cross"></use>
-                </svg>
-              </button>
+            <div class="mobile-menu__wrapper">
+              <ul class="mobile-contacts ul-reset">
+                <li class="mobile-contacts__item"><a href="" class="link mobile-contacts__link mobile-contacts__link_phone">+38 096 111 11 11</a></li>
+                <li class="mobile-contacts__item"><a href="" class="link mobile-contacts__link mobile-contacts__link_email">info@devstudio.com</a></li>
+              </ul>
+              <ul class="mobile-social ul-reset">
+                <li class="mobile-social__item"><a href="" class="link mobile-social__link">Instagram</a></li>
+                <li class="mobile-social__item"><a href="" class="link mobile-social__link">Twitter</a></li>
+                <li class="mobile-social__item"><a href="" class="link mobile-social__link">Facebook</a></li>
+                <li class="mobile-social__item"><a href="" class="link mobile-social__link">LinkedIn</a></li>
+              </ul>
+            </div>
           </div>
-          
-       
-        
-       
+        </div>
+          <button type="button" class="mobile-menu__btn menu-closed">
+                <svg class="mobile-menu__svg mobile-menu__open">
+                  <use href="./images/sprite.svg#icon-hamburger"></use>
+                </svg>
+          </button>
       </div>
     </header>
-
     <!--==================== MAIN ====================-->
 
-    <!-- <main>
+    <main>
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Наши работы</h1>
@@ -125,15 +123,15 @@
                 <div class="portfolio_container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/techno/techno__desktop.jpg"
+                      srcset="./images/portfolio/techno/techno__desktop.jpg 1x, ./images/portfolio/techno/techno__desktop@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio/techno/techno__tablet.jpg"
+                      srcset="./images/portfolio/techno/techno__tablet.jpg 1x, ./images/portfolio/techno/techno__tablet@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/techno/techno__mobile.jpg"
+                      srcset="./images/portfolio/techno/techno__mobile.jpg 1x, /images/portfolio/techno/techno__mobile@2x.jpg 2x"
                       media="(min-width: 480px)"
                     />
                     <img
@@ -158,15 +156,15 @@
                 <div class="portfolio_container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/new-orlean/new-orlean__desktop.jpg"
+                      srcset="./images/portfolio/new-orlean/new-orlean__desktop.jpg 1x, ./images/portfolio/new-orlean/new-orlean__desktop@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio/new-orlean/new-orlean__tablet.jpg"
+                      srcset="./images/portfolio/new-orlean/new-orlean__tablet.jpg 1x, ./images/portfolio/new-orlean/new-orlean__tablet@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/new-orlean/new-orlean__mobile.jpg"
+                      srcset="./images/portfolio/new-orlean/new-orlean__mobile.jpg 1x, ./images/portfolio/new-orlean/new-orlean__mobile@2x.jpg 2x"
                       media="(min-width: 480px)"
                     />
                     <img
@@ -191,15 +189,15 @@
                 <div class="portfolio_container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/seafood/seafood__desktop.jpg"
+                      srcset="./images/portfolio/seafood/seafood__desktop.jpg 1x, ./images/portfolio/seafood/seafood__desktop@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio/seafood/seafood__tablet.jpg"
+                      srcset="./images/portfolio/seafood/seafood__tablet.jpg 1x, ./images/portfolio/seafood/seafood__tablet@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/seafood/seafood__mobile.jpg"
+                      srcset="./images/portfolio/seafood/seafood__mobile.jpg 1x, ./images/portfolio/seafood/seafood__mobile@2x.jpg 2x"
                       media="(min-width: 480px)"
                     />
                     <img
@@ -224,15 +222,15 @@
                 <div class="portfolio_container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/prime/prime__desktop.jpg"
+                      srcset="./images/portfolio/prime/prime__desktop.jpg 1x, ./images/portfolio/prime/prime__desktop@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio/prime/prime__tablet.jpg"
+                      srcset="./images/portfolio/prime/prime__tablet.jpg 1x, ./images/portfolio/prime/prime__tablet@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/prime/prime__mobile.jpg"
+                      srcset="./images/portfolio/prime/prime__mobile.jpg 1x, ./images/portfolio/prime/prime__mobile@2x.jpg 2x"
                       media="(min-width: 480px)"
                     />
                     <img src="./images/portfolio/prime/prime__mobile.jpg" alt="Чёрные наушники" />
@@ -254,15 +252,15 @@
                 <div class="portfolio_container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/boxes/boxes__desktop.jpg"
+                      srcset="./images/portfolio/boxes/boxes__desktop.jpg 1x, ./images/portfolio/boxes/boxes__desktop@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio/boxes/boxes__tablet.jpg"
+                      srcset="./images/portfolio/boxes/boxes__tablet.jpg 1x, ./images/portfolio/boxes/boxes__tablet@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/boxes/boxes__mobile.jpg"
+                      srcset="./images/portfolio/boxes/boxes__mobile.jpg 1x, ./images/portfolio/boxes/boxes__mobile@2x.jpg 2x"
                       media="(min-width: 480px)"
                     />
                     <img
@@ -287,15 +285,15 @@
                 <div class="portfolio_container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/inspiration/inspiration__desktop.jpg"
+                      srcset="./images/portfolio/inspiration/inspiration__desktop.jpg 1x, ./images/portfolio/inspiration/inspiration__desktop@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio/inspiration/inspiration__tablet.jpg"
+                      srcset="./images/portfolio/inspiration/inspiration__tablet.jpg 1x, ./images/portfolio/inspiration/inspiration__tablet@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/inspiration/inspiration__mobile.jpg"
+                      srcset="./images/portfolio/inspiration/inspiration__mobile.jpg 1x, ./images/portfolio/inspiration/inspiration__mobile@2x.jpg 2x"
                       media="(min-width: 480px)"
                     />
                     <img
@@ -320,15 +318,15 @@
                 <div class="portfolio_container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/limited-edition/limited-edition__desktop.jpg"
+                      srcset="./images/portfolio/limited-edition/limited-edition__desktop.jpg 1x, ./images/portfolio/limited-edition/limited-edition__desktop@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio/limited-edition/limited-edition__tablet.jpg"
+                      srcset="./images/portfolio/limited-edition/limited-edition__tablet.jpg 1x, ./images/portfolio/limited-edition/limited-edition__tablet@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/limited-edition/limited-edition__mobile.jpg"
+                      srcset="./images/portfolio/limited-edition/limited-edition__mobile.jpg 1x, ./images/portfolio/limited-edition/limited-edition__mobile@2x.jpg 2x"
                       media="(min-width: 480px)"
                     />
                     <img
@@ -353,15 +351,15 @@
                 <div class="portfolio_container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/lab/lab__desktop.jpg"
+                      srcset="./images/portfolio/lab/lab__desktop.jpg 1x, ./images/portfolio/lab/lab__desktop@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio/lab/lab__tablet.jpg"
+                      srcset="./images/portfolio/lab/lab__tablet.jpg 1x, ./images/portfolio/lab/lab__tablet@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/lab/lab__mobile.jpg"
+                      srcset="./images/portfolio/lab/lab__mobile.jpg 1x, ./images/portfolio/lab/lab__mobile@2x.jpg 2x"
                       media="(min-width: 480px)"
                     />
                     <img
@@ -386,15 +384,15 @@
                 <div class="portfolio_container">
                   <picture>
                     <source
-                      srcset="./images/portfolio/business/business__desktop.jpg"
+                      srcset="./images/portfolio/business/business__desktop.jpg 1x, ./images/portfolio/business/business__desktop@2x.jpg 2x"
                       media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/portfolio/business/business__tablet.jpg"
+                      srcset="./images/portfolio/business/business__tablet.jpg 1x, ./images/portfolio/business/business__tablet@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/portfolio/business/business__mobile.jpg"
+                      srcset="./images/portfolio/business/business__mobile.jpg 1x, ./images/portfolio/business/business__mobile@2x.jpg 2x"
                       media="(min-width: 480px)"
                     />
                     <img
@@ -417,10 +415,10 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!--==================== FOOTER ====================-->
-    <!-- <footer class="main-footer">
+    <footer class="main-footer">
       <div class="container container_footer">
         <div class="main-footer__column address">
           <a href="./index.html" class="link logo logo_reverse"
@@ -489,7 +487,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer> 
     <script src="js/mobile-menu.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

@@ -1,0 +1,128 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    padding: 0 15px;
+    min-width: 320px;
+    z-index: 1;
+    padding-top: 48px;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+.mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95%;
+    max-width: 450px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.mobile-menu__btn {
+    background-color: transparent;
+    border: none;
+    padding: none;
+    margin: none;
+}
+
+.menu-opened {
+    position: absolute;
+    top: -40px;
+    right: 0px;
+}
+
+.menu-closed {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu__svg {
+    height: 40px;
+    width: 40px;
+
+    .mobile-menu__btn:hover &,
+    .mobile-menu__btn:focus & {
+        fill: var(--accent-color);
+    }
+}
+.menu-mobile__item {
+    font-size: 40px;
+    line-height: 1.17;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+.menu-mobile__item {
+    margin-bottom: 32px;
+}
+.menu-mobile__link {
+    color: var(--secondary-text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.mobile-contacts__link {
+
+    @media screen and (max-width: 767px) {
+        color: var(--primary-text-color);
+        font-weight: 500;
+        line-height: 1.17;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.mobile-contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+.mobile-contacts__item:last-child {
+    margin-bottom: 64px;
+}
+.mobile-contacts__link_phone {
+    font-size: 34px;
+    margin-bottom: 32px;
+}
+
+.mobile-contacts__link_email {
+    font-size: 24px;
+}
+.mobile-social__link {
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02;
+    color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color-hover);
+    }
+}
+
+.mobile-social {
+    display: flex;
+}
+.mobile-social__item:not(:last-child) {
+    margin-right: 10px;
+}
+.mobile-social__item {
+    display: flex;
+}
+.mobile-social__item:not(:last-child):after {
+    content: " ";
+    width: 1px;
+    background-color: var(--grey-semitransparent);
+    height: 22px;
+    display: block;
+    margin-left: 10px;
+}

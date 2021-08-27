@@ -1,40 +1,43 @@
 .logo {
-    // margin-right: 93px;
-    
     font-family: var(--font-raleway);
     font-size: 26px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
+
 .logo_main {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
     color: var(--secondary-text-color);
 
     &:hover,
-    &:focus{
+    &:focus {
         color: initial;
     }
 
-    @media screen and (max-width: 480px) {
-        display: block;
-        padding-top: 16px;
-        padding-bottom: 16px;
+    @media screen and (min-width: 768px) {
+        margin-top: 26px;
+        margin-bottom: 26px;
         margin-right: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
     }
 }
 
 .logo_accent {
     color: var(--accent-color);
 }
+
 .logo_reverse {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     color: var(--white-color);
 
     &:hover,
-    &:focus{
+    &:focus {
         color: var(--white-color);
     }
 }
